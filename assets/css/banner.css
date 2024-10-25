@@ -1,0 +1,28 @@
+/* Banner Styling */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    background-image: url('../../files/1.png'); /* Replace with the path to your image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(35, 10, 255);
+    text-align: center;
+  }
+  
+  .banner-content h1 {
+    font-size: 4rem; /* Adjust font size as needed */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(10, 255, 100);
+
+  }
+  
