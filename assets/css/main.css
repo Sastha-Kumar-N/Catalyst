@@ -309,6 +309,8 @@ h6 {
     left: -100%;
     visibility: visible;
   }
+  .catalyst {
+    padding: 10px; /* Fixed the syntax by adding a selector */
 }
 
 /* Navmenu - Mobile */
