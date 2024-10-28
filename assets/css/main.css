@@ -187,25 +187,20 @@ h6 {
   line-height: 0px;
 }
 
-@media (max-width: 1200px) {
+/* Media Query for Large Devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
   .header .logo {
-    order: 1;
+    order: -1;
   }
 
   .header .header-social-links {
-    order: 2;
+    order: 0;
   }
 
   .header .navmenu {
-    order: 3;
+    order: 0;
   }
-}
 
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-/* Navmenu - Desktop */
-@media (min-width: 1200px) {
   .navmenu {
     padding: 0;
   }
@@ -309,11 +304,13 @@ h6 {
     left: -100%;
     visibility: visible;
   }
+
   .catalyst {
-    padding: 10px; /* Fixed the syntax by adding a selector */
+    padding: 10px;
+  }
 }
 
-/* Navmenu - Mobile */
+/* Media Query for Medium Devices (tablets, 768px to 1199px) */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
     color: var(--nav-color);
@@ -385,13 +382,6 @@ h6 {
     color: var(--nav-dropdown-hover-color);
   }
 
-  .navmenu .active i,
-  .navmenu .active:focus i {
-    background-color: var(--accent-color);
-    color: var(--contrast-color);
-    transform: rotate(180deg);
-  }
-
   .navmenu .dropdown ul {
     position: static;
     display: none;
@@ -439,6 +429,47 @@ h6 {
     display: block;
   }
 }
+
+/* Media Query for Small Devices (landscape phones, 576px to 767px) */
+@media (max-width: 767px) {
+  .header .logo h1 {
+    font-size: 24px;
+  }
+
+  .header .header-social-links a {
+    font-size: 14px;
+  }
+
+  .navmenu a {
+    font-size: 15px;
+    padding: 8px 15px;
+  }
+
+  .navmenu ul {
+    inset: 40px 10px 10px 10px;
+  }
+}
+
+/* Media Query for Extra Small Devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+  .header {
+    padding: 5px 0;
+  }
+
+  .header .logo h1 {
+    font-size: 20px;
+  }
+
+  .header .header-social-links a {
+    font-size: 12px;
+  }
+
+  .navmenu a {
+    font-size: 14px;
+    padding: 7px 10px;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Global Footer
