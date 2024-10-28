@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif; /* Ensure a fallback font */
+    background: linear-gradient(#1c5b7e, #2d8bc2); /* Changed gradient colors */
+}
+
+.contact-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Changed 'start' to 'flex-start' for clarity */
+    gap: 20px;
+}
+
+.contact-left-title h1 img {
+    height: 135px;
+    width: 150px;
+    border: 2px solid rebeccapurple;
+    border-radius: 1px;
+}
+
+.contact-left-title h2 {
+    font-weight: 600;
+    color: #ff7e05; /* Updated color */
+    font-size: 40px;
+    margin-bottom: 3px;
+}
+
+.contact-left-title h3 {
+    font-weight: 500;
+    color: #dae413ce; /* Updated color */
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #2348d0; /* Updated color */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #ff0974;
+    border-radius: 50px;
+}
+
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus {
+    border: 2px solid #ff994f; /* Keep focus color consistent */
+}
+
+.contact-inputs::placeholder {
+    color: #a9a9a9;
+}
+
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px; /* Fixed typo from '1opx' to '10px' */
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    cursor: pointer;
+}
+
+.contact-left button img {
+    height: 30px;
+}
+
+.contact-right img {
+    width: 600px;
+}
+
+@media (max-width: 800px) {
+    .contact-inputs {
+        width: 80vw;        
+    }
+    .contact-right {
+        display: none;
+    }
+}
