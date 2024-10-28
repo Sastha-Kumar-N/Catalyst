@@ -64,6 +64,9 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
+  /* Gradient from #1c5b7e to a lighter shade 
+  background: linear-gradient(135deg, #1c5b7e, #c00c4f);
+  color: #fff; /* Optional: Adjust text color for better contrast */
 }
 
 a {
