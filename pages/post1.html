@@ -136,11 +136,17 @@ a:hover {
                 <h2 class="title">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</h2>
 
                 <div class="meta-top">
-                  <ul>
-                    <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-details.html">John Doe</a></li>
-                    <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-details.html"><time datetime="2020-01-01">Jan 1, 2022</time></a></li>
-                    <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-details.html">12 Comments</a></li>
-                  </ul>
+                  <p>Published on: <span id="publishedDate"></span></p>
+
+                  <script>
+                    // Get today's date
+                    const today = new Date();
+                    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                    const formattedDate = today.toLocaleDateString('en-US', options);
+                
+                    // Display the date
+                    document.getElementById("publishedDate").textContent = formattedDate;
+                  </script>
                 </div><!-- End meta top -->
 
                 <div class="content">
@@ -171,7 +177,7 @@ a:hover {
                     Quia et suscipit non sequi. Maxime sed odit. Beatae nesciunt nesciunt accusamus quia aut ratione aspernatur dolor. Sint harum eveniet dicta exercitationem minima. Exercitationem omnis asperiores natus aperiam dolor consequatur id ex sed. Quibusdam rerum dolores sint consequatur quidem ea.
                     Beatae minima sunt libero soluta sapiente in rem assumenda. Et qui odit voluptatem. Cum quibusdam voluptatem voluptatem accusamus mollitia aut atque aut.
                   </p>
-                  <img src="assets/img/blog/blog-inside-post.jpg" class="img-fluid" alt="">
+                  <!--<img src="assets/img/blog/blog-inside-post.jpg" class="img-fluid" alt="">-->
 
                   <h3>Ut repellat blanditiis est dolore sunt dolorum quae.</h3>
                   <p>
@@ -182,7 +188,7 @@ a:hover {
                     Alias quia non aliquid. Eos et ea velit. Voluptatem maxime enim omnis ipsa voluptas incidunt. Nulla sit eaque mollitia nisi asperiores est veniam.
                   </p>
 
-                </div><!-- End post content -->
+                </div><!-- End post content --
 
                 <div class="meta-bottom">
                   <i class="bi bi-folder"></i>
