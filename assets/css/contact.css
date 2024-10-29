@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Outfit', sans-serif; /* Ensure a fallback font */
-    background: url(./files/n/1.2.jpg) no-repeat center center fixed ;
+    background: url(../../files/n/1.2.jpg) no-repeat center center fixed ;
     background-size: 100vw 100vh; /* Forces the image to fit the viewport dimensions */
 
 }
